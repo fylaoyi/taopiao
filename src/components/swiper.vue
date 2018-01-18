@@ -1,10 +1,18 @@
 <template>
   <div id="banner-wrapper">
+    <Swipe></Swipe>
+    <SwipeItem></SwipeItem>
   </div>
 </template>
 <script>
+import {Swipe, SwipeItem} from 'vue-swipe'
+require('vue-swipe/dist/vue-swipe.css')
 export default {
-  name: 'banner'
+  name: 'banner',
+  components: {
+    Swipe,
+    SwipeItem
+  }
 }
 </script>
 
