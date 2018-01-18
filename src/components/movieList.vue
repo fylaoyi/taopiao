@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     init: () => {
-      axios.get('database/bj_hot.json').then((data) => {
+      axios.get('../database/bj_hot.json').then((data) => {
         console.log(data)
       }, (err) => {
         console.log(err)
